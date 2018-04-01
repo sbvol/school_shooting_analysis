@@ -1,0 +1,573 @@
+/* Main Html */
+html, body {
+    height: 100%;
+    max-height:720px;
+}
+
+.container-fluid {
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Navigation */
+.bg-faded {
+  background: white;
+}
+
+.map-container {
+  height: 100%;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  margin-top: 20px;
+}
+
+.navbar {
+  padding-bottom:0px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #88888b;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color: #88888b;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color:#014c8c;
+}
+
+#homeButton{
+  border-bottom:4px solid #c7b68f;
+  padding-right:35px;
+  width:166px;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 30px;
+  color:##4a4a4a;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #c7b68f;
+}
+
+/* Mapbox CSS */
+#map {
+    position: relative;
+    width: 100%;
+    height:600px;
+}
+
+#console {
+  position: relative;
+  margin: 0px;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+#slider {
+  width: 150px;
+  margin-left:2px;
+}
+
+/* Shootings Gradient Legend */
+.shootings-legend {
+  margin-bottom: 20px;
+  position:absolute;
+  left:70px;
+  bottom:10px;
+
+}
+
+.shootings-legend .row {
+  height: 15px;
+  width: 250px;
+}
+
+/* Filter Console */
+.session {
+  margin-bottom: 20px;
+}
+
+.session .row {
+  height: 40px;
+  width: 250px;
+}
+
+.colors {
+  background: linear-gradient(to right, #2dc4b2, #3bb3c3, #669ec4, #8b88b6, #a2719b, #aa5e79);
+  margin-bottom: 5px;
+}
+
+.label {
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Choropleth Legend Overlay  */
+.map-overlay {
+  position: absolute;
+  bottom: 180px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+}
+
+#features {
+  top: 20px;
+  height: 180px;
+  margin-top: 20px;
+  padding:15px;
+  width:200px;
+}
+
+#legend {
+  padding: 10px;
+  line-height: 18px;
+  height: 165px;
+  margin-bottom: 40px;
+  width: 110px;
+  font-size: 10px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+
+/* Layer Adjust Menu - Toggle Buttons */
+#menu {
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 220px;
+    left: 30px;
+    border-radius: 3px;
+    width: 100px;
+    /* border: 1px solid rgba(0,0,0,0.4); */
+}
+
+#menu a {
+    font-size: 11px;
+    color: #404040;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+#menu a:last-child {
+    border: none;
+}
+
+#menu a:hover {
+    background-color: #f8f8f8;
+    color: #404040;
+}
+
+#menu a.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#menu a.active:hover {
+    background: #3074a4;
+}
+
+/* Summary Page */
+.bubble {
+  text-align:center;
+  margin-top:20px;
+  max-height:340px;
+}
+
+.bubble-method {
+  margin-top:10px;
+  max-height:340px;
+}
+
+.bubble-method h1{
+  text-align: center;
+  margin-top:10px;
+  max-height:340px;
+}
+
+.bubble-def {
+  margin-top:10px;
+  max-height:340px;
+}
+
+.bubble-def h1{
+  text-align: center;
+  margin-top:10px;
+  max-height:340px;
+}
+
+.bubble-container {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.circle {
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+  background-color:rgba(199,182,143,0.7);
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.circle2 {
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+  background-color:rgba(199,182,143,0.7);
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.circle3 {
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+  background-color:rgba(199,182,143,0.7);
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.inner-text {
+  padding-top:80px;
+  padding-right:30px;
+  padding-left:30px;
+}
+
+.inner-text-method{
+  padding-top:33px;
+  padding-right:30px;
+  padding-left:40px;
+}
+
+.inner-text-method p{
+  margin-bottom:0px;
+}
+
+.inner-text-def{
+  padding-top:33px;
+  padding-right:30px;
+  padding-left:50px;
+}
+
+.inner-text-def p{
+  margin-bottom:0px;
+}
+
+.summary_container h1{
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:10px;
+  margin-left:0px;
+  text-align:center;
+  font-size:28px;
+}
+
+.summary_container p{
+  text-align:center;
+  font-size: 14px;
+}
+
+.summary_problem {
+  padding:30px;
+  margin-bottom:0px:
+}
+
+.summary_method {
+  margin:30px;
+  margin-bottom:0px;
+}
+
+.summary_def {
+  margin:30px;
+  margin-bottom:0px;
+}
+
+.summary_def p {
+  margin-bottom:0px;
+  text-align:left;
+}
+
+
+/* Team Page */
+.greyd {
+  background-color:#f5f5f5;
+  padding-bottom:20px;
+}
+
+.team_head {
+  margin:30px;
+  margin-top:80px;
+  text-align:center;
+}
+
+.team_head h1{
+  text-align:center;
+  font-size:40px;
+}
+
+.team_body {
+  margin-left:auto;
+  margin-right:auto;
+  padding:80px;
+}
+
+.team_body h1{
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-size:30px;
+  padding-bottom:20px;
+  color:#88888b;
+}
+
+.img_place {
+  margin-left:auto;
+  margin-right:auto;
+  padding:30px;
+  text-align:center;
+}
+
+.img_place img{
+  height:200px;
+  width:200px;
+}
+
+.info_box {
+  padding:50px;
+  padding-top:0px;
+  text-align:center;
+}
+
+.info_box p {
+  margin-bottom:0px;
+}
+
+i {
+  padding:8px;
+  font-size:25px;
+}
+
+/* slid e*/
+.slide2 {
+  max-height:650px;
+  min-height:300px;
+  background:#88888b;
+  color:white;
+  text-align:left;
+  padding-bottom:50px;
+}
+
+.slide2 h1{
+  padding-top:60px;
+  text-align:center;
+  font-size:30px;
+}
+
+.slide2-text {
+  padding-top:30px;
+  padding-left:60px;
+  padding-right:60px;
+  font-size:18px;
+}
+
+/*  */
+/* #c7b68fb3 - Gold */
+
+/* Footer */
+#team-name {
+  padding-top:60px;
+  padding-right:15px;
+  color:white;
+  text-align:right;
+}
+
+.sources {
+  padding-top:30px;
+  padding-left:60px;
+  color:white;
+}
+
+.sources a{
+  text-align:center;
+}
+
+
+.data-image {
+  width:40px;
+  height:40px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.sources p{
+  margin-bottom:0px;
+}
+
+.footer-line {
+  background:linear-gradient(90deg,#c7b68fb3 0,#c7b68fb3);
+}
+
+.footer-style {
+  background-color:#88888b;
+  min-height:120px;
+  max-height:500px;
+}
+/* For media screen 990px and smaller */
+@media screen and (max-width: 990px) {
+    #features {
+      top: 20px;
+      height: 160px;
+      margin-top: 20px;
+      background-color:rgb(245, 246, 246);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      padding:15px;
+      }
+}
+
+/* For media screen 700px and smaller */
+@media screen and (max-width: 700px) {
+
+    /* Choropleth Legend Overlay  */
+    .map-overlay {
+      position: absolute;
+      bottom: -10px;
+      right: 25px;
+      font-family: Arial, sans-serif;
+      overflow: auto;
+      border-radius: 3px;
+    }
+
+    #features {
+      top: 20px;
+      height: 160px;
+      margin-top: 20px;
+      background-color:rgb(245, 246, 246);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      padding:15px;
+      }
+
+    #legend {
+      padding: 10px;
+      line-height: 18px;
+      height: 165px;
+      margin-bottom: 40px;
+      width: 80px;
+      font-size:10px;
+    }
+
+    .legend-key {
+      display: inline-block;
+      border-radius: 20%;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+
+
+    /* Layer Adjust Menu - Toggle Buttons 400px >*/
+    #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 30px;
+        right: 25px;
+        border-radius: 3px;
+        width: 70px;
+        /* border: 1px solid rgba(0,0,0,0.4); */
+    }
+
+    #menu a {
+        font-size: 10px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #menu a.active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    #menu a.active:hover {
+        background: #3074a4;
+    }
+
+    /* Shootings Gradient Legend */
+    .shootings-legend {
+      margin-bottom: 20px;
+      position:absolute;
+      left:40px;
+      bottom:10px;
+      font-size: 10px;
+    }
+
+    .shootings-legend h2{
+      font-size: 10px;
+      margin-left: -13px;
+    }
+
+    .shootings-legend .row {
+      height: 15px;
+      width: 130px;
+      font-size: 10px;
+    }
+
+    /* Filter Console */
+    .session {
+      margin-bottom: 20px;
+    }
+
+    .session .row {
+      height: 40px;
+    }
+
+    .colors {
+      background: linear-gradient(to right, #2dc4b2, #3bb3c3, #669ec4, #8b88b6, #a2719b, #aa5e79);
+      margin-bottom: 5px;
+    }
+
+    .label {
+      width: 15%;
+      display: inline-block;
+      text-align: center;
+    }
+}
